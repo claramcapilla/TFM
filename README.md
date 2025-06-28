@@ -1,7 +1,6 @@
-# TFM
-Comparative Analysis of Gene Expression in RNA-Seq Studies of Salmonella enterica: Focus on the Type VI Secretion System
+# Comparative Analysis of Gene Expression in RNA-Seq Studies of Salmonella enterica: Focus on the Type VI Secretion System
 
-## metadata_cleaning.R
+### metadata_cleaning.R
 This script processes and cleans RNA-Seq sample metadata from the NCBI SRA for Salmonella enterica. It performs the following tasks:
  - Loads raw metadata from an Excel spreadsheet.
  - Removes metadata columns with only missing values.
