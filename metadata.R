@@ -47,4 +47,4 @@ metadatos$strain=ifelse(metadatos$strain=="wild type","WT",metadatos$strain)
 metadatos$strain=ifelse(metadatos$strain=="wildtype","WT",metadatos$strain)
 
 ## Export cleaned metadata
-write.xlsx(metadatos, file = "metadatos.xlsx")
+write.xlsx(metadatos, file = "metadata.xlsx")
