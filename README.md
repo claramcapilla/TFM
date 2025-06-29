@@ -56,3 +56,16 @@ This script generates visual representations and performs principal component an
 - Heatmap Generation: Displays a heatmap of log₂FC values for all T6SS genes across selected experimental conditions.
 - Gene Map for Heatmap Reference: Creates a static map of all T6SS genes for consistent reference alongside the heatmap.
 - PCA Analysis: Performs PCA on log₂FC data to identify global expression trends of the T6SS operon across conditions. Genes and conditions are represented in PC space for intuitive biological interpretation.
+
+### salmonella_T6SS.sql
+This script contains the complete definition and data of the salmonella_T6SS database, developed as part of the project focused on gene expression analysis in the T6SS of Salmonella. Script contents:
+- Instructions to create and configure the database (CREATE DATABASE, ALTER DATABASE)
+- Definition of all relational tables (CREATE TABLE)
+- Setup of primary and foreign key constraints (PRIMARY KEY, FOREIGN KEY)
+- Insertion of all records into each table (INSERT INTO ... VALUES (...))
+All relationships are normalized and ensure referential integrity. How to use:
+- Open SQL Server Management Studio (SSMS).
+- Create a new query window and load the salmonella_T6SS.sql file.
+- Execute the full script (F5).
+The salmonella_T6SS database will be created with all data ready for querying.
+
