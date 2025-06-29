@@ -36,7 +36,7 @@ metadatos=as.data.frame(cbind(Run,Organism,Serovar,strain,genotype,
 metadatos$Serovar=ifelse(metadatos$Serovar=="Typhimuriun","Typhimurium",metadatos$Serovar)
 metadatos$Serovar=ifelse(metadatos$Serovar=="Enteriditis","Enteritidis",metadatos$Serovar)
 
-## Standarise values in tne 'strain' column
+## Standarise values in the 'strain' column
 metadatos$strain=ifelse(metadatos$strain=="Salmonella enterica subsp. enterica serovar typhimurium ATCC 14028","ATCC 14028",metadatos$strain)
 metadatos$strain=ifelse(metadatos$strain=="14028S","14028s",metadatos$strain)
 metadatos$strain=ifelse(metadatos$strain=="ATCC14028s","ATCC 14028s",metadatos$strain)
