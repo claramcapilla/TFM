@@ -41,3 +41,12 @@ This R script processes RNA-seq gene count data from multiple experimental condi
 - Compiles complete and reduced log2 fold-change (log2FC) matrices across all genes and selected conditions.
 - Extracts log2FC data for genes in the Type VI Secretion System (T6SS) operon.
 - Prepares gene lists for use in ClueGO (e.g., for enrichment analysis in Cytoscape).
+
+### T6SS_genes.R
+This R script processes differential expression (DE) results obtained under 14 environmental and stress-related conditions to identify genes involved in the Type VI Secretion System (T6SS). What the script does:
+- Loads DE results from multiple Excel files, each representing a condition with one or more comparisons (replicates or treatments).
+- Loads and parses a GCA feature table to extract genomic annotation, including gene IDs, names, strand, and coordinates.
+- Defines a curated list of T6SS-associated genes, mapped by locus_tag and manually annotated with functional names.
+- Extracts activation and repression events for T6SS genes across all conditions, based on their presence in DE result tables.
+- Stores results in a structured list (t6ss_matches) for further analysis or export (e.g., visualization or functional enrichment).
+
