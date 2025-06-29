@@ -50,3 +50,9 @@ This R script processes differential expression (DE) results obtained under 14 e
 - Extracts activation and repression events for T6SS genes across all conditions, based on their presence in DE result tables.
 - Stores results in a structured list (t6ss_matches) for further analysis or export (e.g., visualization or functional enrichment).
 
+### representation.R
+This script generates visual representations and performs principal component analysis (PCA) on the expression of genes within the T6SS operon of Salmonella Typhimurium 14028S. It builds on previously computed log₂ fold-change (log₂FC) values from RNA-seq differential expression analysis under diverse environmental and stress conditions. Key functionalities:
+- Gene Map Plotting: Visualizes the genomic organization of the T6SS operon using gggenes, highlighting activated genes
+- Heatmap Generation: Displays a heatmap of log₂FC values for all T6SS genes across selected experimental conditions.
+- Gene Map for Heatmap Reference: Creates a static map of all T6SS genes for consistent reference alongside the heatmap.
+- PCA Analysis: Performs PCA on log₂FC data to identify global expression trends of the T6SS operon across conditions. Genes and conditions are represented in PC space for intuitive biological interpretation.
