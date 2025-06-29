@@ -10,6 +10,12 @@ This script processes and cleans RNA-Seq sample metadata from the NCBI SRA for S
  - Exports a cleaned metadata table (metadatos.xlsx) for downstream analysis.
 This script supports the creation of a reproducible transcriptomic dataset and facilitates filtering by experimental condition, strain, or host model.
 
+### create_count_matrix.R
+This R script is designed to generate structured gene count matrices from multiple .tabular files output by tools such as featureCounts (e.g., in Galaxy workflows). Each .tabular file contains two columns: gene identifiers and raw read counts. The script performs the following steps:
+- Reads a series of raw count files (control and treatment replicates) corresponding to different experimental conditions.
+- Assembles each condition’s counts into a unified matrix, assigning appropriate sample names.
+- Stores the matrices as .csv files for downstream differential expression analysis using packages such as DESeq2 or NOISeq.
+
 ### functions_DE.R
 This script provides a collection of modular R functions designed to facilitate differential gene expression (DGE) analysis of RNA-seq datasets in Salmonella enterica. It supports workflows for both experiments with biological replicates (using DESeq2) and those without replicates (using NOISeq). The resulting outputs include tables of significantly activated and repressed genes, as well as comprehensive log2 fold-change values. Additionally, the script allows automated export of results to neatly formatted Excel files, supporting analyses involving one to four treatment conditions.
 The script includes functions for:
