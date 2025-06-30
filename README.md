@@ -63,9 +63,4 @@ This script contains the complete definition and data of the salmonella_T6SS dat
 - Definition of all relational tables (CREATE TABLE)
 - Setup of primary and foreign key constraints (PRIMARY KEY, FOREIGN KEY)
 - Insertion of all records into each table (INSERT INTO ... VALUES (...))
-All relationships are normalized and ensure referential integrity. How to use:
-- Open SQL Server Management Studio (SSMS).
-- Create a new query window and load the salmonella_T6SS.sql file.
-- Execute the full script (F5).
-The salmonella_T6SS database will be created with all data ready for querying.
-
+All relationships are normalized. The database can be created with all data by executing the salmonella_T6SS.sql script in a new query window in SQL Server Management Studio (SSMS).
